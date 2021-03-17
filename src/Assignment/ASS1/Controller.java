@@ -67,6 +67,11 @@ public class Controller implements Initializable {
             newStudent.setAge(Integer.parseInt(ageText.getText()));
             newStudent.setMark(Integer.parseInt(markText.getText()));
             studentList.add(newStudent);
+
+            validate.setText("");
+            nameText.setText("");
+            ageText.setText("");
+            markText.setText("");
         }else {
             validate.setText("Vui lòng nhập ttin");
             validate.setDisable(false);
